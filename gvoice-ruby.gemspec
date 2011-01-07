@@ -3,7 +3,7 @@ $LOAD_PATH.unshift File.expand_path('../lib', __FILE__)
 require 'gvoice-ruby/version'
 
 Gem::Specification.new do |s|
-  s.name        = "gvoice-ruby"
+  s.name        = "harleytt-gvoice-ruby"
   s.version     = GvoiceRuby::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Keith Gautreaux", "Roy Kolak", "Jeremy Stephens"]
