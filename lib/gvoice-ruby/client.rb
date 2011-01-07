@@ -68,9 +68,9 @@ module GvoiceRuby
 
       if show_details
         logger.info "Sending sms..."
-        logger.info "\tTo: #{options[:phone_number]}"
-        logger.info "\tBody: #{options[:text]}"
-        logger.info "\tSent at: #{Time.now}\n"
+        logger.info "  To: #{options[:phone_number]}"
+        logger.info "  Body: #{options[:text]}"
+        logger.info "  At: #{Time.now}"
       end
 
       post(options, fields)
