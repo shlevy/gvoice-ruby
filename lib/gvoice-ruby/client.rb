@@ -166,7 +166,7 @@ module GvoiceRuby
       if logged_in?
         @curb_instance.url = "https://www.google.com/voice/account/signout"
         @curb_instance.perform
-        logger.info logger.info "FINISHED LOGOUT #{@curb_instance.url}: HTTP #{@curb_instance.response_code}"
+        logger.info "FINISHED LOGOUT #{@curb_instance.url}: HTTP #{@curb_instance.response_code}"
         @curb_instance = nil
       end
       self
