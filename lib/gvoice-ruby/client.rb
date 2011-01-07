@@ -59,12 +59,19 @@ module GvoiceRuby
       parser.parse_calls(inbox['messages'])
     end
     
-    def send_sms(options)
+    def send_sms(options, show_details = true)
       fields = [ PostField.content('phoneNumber', options[:phone_number]),
                  PostField.content('text', options[:text]),
                  PostField.content('_rnr_se', @_rnr_se) ]
 
       options.merge!({ :post_url => "https://www.google.com/voice/sms/send" })
+
+      if show_details
+        logger.info "Sending sms..."
+        logger.info "\tTo: #{options[:phone_number]}"
+        logger.info "\tBody: #{options[:text]}"
+        logger.info "\tSent at: #{Time.now}\n"
+      end
 
       post(options, fields)
     end
