@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   gvoice-ruby is currently a very preliminary project with limited functionality basically confined to returning arrays of voicemail or sms objects and sending sms messages, or connecting calls. It cannot cancel calls already in progress. It currently works under ruby 1.8.7-p302 and 1.9.2-p0 on my computer running Mac OS X 10.6 (Snow Leopard). It is not guaranteed to work anywhere else and has very few tests.
 EOS
 
-  s.required_rubygems_version = "~> 1.3.6"
+  s.required_rubygems_version = ">= 1.3.6"
   # s.rubyforge_project         = "gvoice-ruby"
   
   s.add_dependency "curb", "~> 0.7.8"
