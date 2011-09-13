@@ -24,6 +24,8 @@ module GvoiceRuby
       
       login(config)
       set_rnr_se_token
+      # in case _rnr_se scraping fails due to google changing its page content
+      @_rnr_se ||= config[:rnr_se]
     end
     
     def any_unread?
