@@ -19,7 +19,7 @@ EOS
   
   s.add_dependency "curb", "~> 0.7.8"
   s.add_dependency "nokogiri", "~> 1.4.3.1"
-  s.add_dependency "json", "~> 1.4.6"
+  s.add_dependency "json", "~> 1.4"
 
   s.add_development_dependency "bundler", "~> 1.0.0.rc.6"
   s.add_development_dependency "mocha",  "~> 0.9.7"
