@@ -24,7 +24,7 @@ or
 
 Clone the git repository:
 
-	$ git clone git://github.com/kgautreaux/gvoice-ruby.git
+	$ git clone git://github.com/shlevy/gvoice-ruby.git
 
 then:
 
